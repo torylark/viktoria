@@ -1,0 +1,46 @@
+//1
+let user = {
+    age: '',
+    userName: ''
+  };
+  
+  const age = prompt("Enter user age", "")
+  const userName = prompt("Enter user name", "")
+  
+  user['age'] = age;
+  user['userName'] = userName;
+  
+  console.log("age = " + user.age + " , name " + user.userName)
+  
+  // 2
+
+
+
+document.querySelector('th').style.backgroundColor = 'yellow';
+document.querySelector('th').style.fontSize = '18px';
+
+document.querySelector('th').nextElementSibling.style.backgroundColor = 'blue';
+document.querySelector('th').nextElementSibling.style.fontSize = '33px';
+
+
+
+
+// 3 * Доставать случайные цвет и размер из заранее описанных двух массивов: со строками цветов и с числами размеров.
+
+
+const colors = ['yellow', 'blue', 'dark blue', 'red'];
+const sizes = ['20px', '12px', '40px', '88px'];
+
+
+
+// document.querySelector('th').style.backgroundColor =  colors[Math.floor(Math.random() * colors.length)];
+// document.querySelector('th').style.fontSize = sizes[Math.floor(Math.random() * sizes.length)];
+
+// document.querySelector('th').nextElementSibling.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+// document.querySelector('th').nextElementSibling.style.fontSize = sizes[Math.floor(Math.random() * sizes.length)];
+
+
+for (let th of document.querySelectorAll('th')) {
+    th.style.backgroundColor =  colors[Math.floor(Math.random() * colors.length)];
+    th.style.fontSize = sizes[Math.floor(Math.random() * sizes.length)];
+}
