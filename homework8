@@ -1,0 +1,47 @@
+const arr = ['horse', 'pig', 'cat', 'dog', 'apple'];
+
+arr.forEach((element) => console.log(element));
+
+const users = [{
+        name: 'misha',
+        age: 15,
+    },
+    {
+        name: 'vika',
+        age: 16
+    },
+    {
+        name: 'armib',
+        age: 18
+    },
+    {
+        name: 'lol',
+        age: 33
+    },
+
+];
+
+users.forEach((user) => {
+    if (user.age > 10) {
+        console.log(user.name)
+    }
+})
+
+
+
+
+
+
+
+const words = ['horse', 'pig', 'cat', 'dog', 'apple'];
+
+
+function addNewword(arr) {
+
+    return words.map((word) => word.length = {
+        word: word,
+        length: word.length
+    })
+}
+
+console.log(addNewword(words));
